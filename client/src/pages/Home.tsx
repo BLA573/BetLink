@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import BrandMark from "@/components/BrandMark";
 import { CheckCircle2, MapPin, Shield, Zap, Download, ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -32,9 +33,7 @@ export default function Home() {
       >
         <div className="container flex items-center justify-between py-4 md:py-5">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">B</span>
-            </div>
+            <BrandMark className="h-10 w-10 shrink-0" />
             <span className="font-bold text-xl text-foreground">BetLink</span>
           </div>
           <div className="hidden md:flex items-center gap-8">
@@ -306,9 +305,7 @@ export default function Home() {
             {/* Brand */}
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-lg">B</span>
-                </div>
+                  <BrandMark className="h-10 w-10 shrink-0" />
                 <span className="font-bold text-lg text-foreground">BetLink</span>
               </div>
               <p className="text-sm text-muted-foreground">

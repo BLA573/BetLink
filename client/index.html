@@ -16,10 +16,10 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script type="module">
-      const analyticsEndpoint = "%VITE_ANALYTICS_ENDPOINT%";
-      const analyticsWebsiteId = "%VITE_ANALYTICS_WEBSITE_ID%";
+      const analyticsEndpoint = import.meta.env.VITE_ANALYTICS_ENDPOINT;
+      const analyticsWebsiteId = import.meta.env.VITE_ANALYTICS_WEBSITE_ID;
 
-      if (!analyticsEndpoint.includes("%VITE_") && !analyticsWebsiteId.includes("%VITE_")) {
+      if (analyticsEndpoint && analyticsWebsiteId) {
         const script = document.createElement("script");
         script.defer = true;
         script.src = `${analyticsEndpoint}/umami`;
