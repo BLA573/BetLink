@@ -1,0 +1,26 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="favicon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#2dd4a0" />
+      <stop offset="50%" stopColor="#14b87c" />
+      <stop offset="100%" stopColor="#0f9f6a" />
+    </linearGradient>
+  </defs>
+  
+  <!-- White background -->
+  <rect width="512" height="512" fill="#ffffff" />
+  
+  <!-- Main "B" shape background -->
+  <path
+    d="M164 64h112c98.4 0 176 77.6 176 176 0 50.8-21.2 92.8-60.8 120 35.2 24 52.8 60.8 52.8 110.4V448c0 35.2-28.8 64-64 64H164c-35.2 0-64-28.8-64-64V128c0-35.2 28.8-64 64-64Z"
+    fill="url(#favicon-grad)"
+  />
+  
+  <!-- Location pin overlay in white -->
+  <circle cx="260" cy="272" r="82" fill="#ffffff" />
+  <path
+    d="M260 196c-42 0-76 34-76 76 0 24 10 45.6 26.4 60.4L260 436l49.6-103.6C326 317.6 336 296 336 272c0-42-34-76-76-76Z"
+    fill="#ffffff"
+  />
+  <circle cx="260" cy="272" r="28" fill="#2dd4a0" />
+</svg>
